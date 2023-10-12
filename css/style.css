@@ -23,6 +23,8 @@ h1{
     color: #0ea0a0;
     padding: 20px;
     font-size: 3rem;
+    background-color: #000000;
+    line-height: auto;
 }
 h2{
     font-family: 'Quantico', sans-serif;
@@ -33,6 +35,7 @@ h2{
     justify-content: center;
     align-items: center;
     background-color: #000000;
+    line-height: auto;
 }
 
 h3{
@@ -43,7 +46,6 @@ h3{
 p{
     text-transform:initial;
     font-size: 2rem;
-    margin-left: 50px;
     color: aquamarine;
 }
 
@@ -175,12 +177,12 @@ margin-top: 50px;
     "videom titulom"
     "pmod pmod";
     align-items: center;
+    row-gap: 15px;
 }
 .video-mariood{
     display:flex;
     justify-content: center;
     align-items: center;
-    padding: 25px;
     grid-area: videom;
 }
 .titulo-mariood{
@@ -194,13 +196,14 @@ margin-top: 50px;
     text-transform: uppercase;
     background-color: #087E8B;
     border-radius: 30%;
-
 }
 
 .p-mariood{
     grid-area: pmod;
     padding: 20px 100px;
     background-color: #000000;
+    text-align: justify;
+    text-indent: 1em;
 }
 .video-mariood iframe{
     width: 600px;
@@ -295,12 +298,17 @@ footer .footer-info p{
     }
 /* Estilos pagina nintendo */
 .video-mariood iframe{
-    width: auto;
-    height: auto;
+    width: 320px;
+    height: 210px;
 }
 .p-mariood p{
     font-size: 1rem;
     text-align: justify;
 }
+.p-mariood{
+    padding: 20px;
 
 }
+
+}
+
