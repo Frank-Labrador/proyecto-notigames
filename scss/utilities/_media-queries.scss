@@ -1,0 +1,174 @@
+// MQ para tablets
+@media screen and (max-width: 1023px) {
+
+    /*mq tablet header*/
+    header {
+
+        nav {
+            ul {
+                li {
+                    a {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        img {
+            width: 100px;
+        }
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    /*mq index*/
+    .main-index {
+        .articulo-principal {
+            grid-template-columns: auto;
+            grid-template-rows: repeat(3, auto);
+            grid-template-areas:
+                "titulo"
+                "info"
+                "imagen";
+
+            .info-imagen {
+                img {
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    //Estilos de pagina de Nintendo
+    /* seccion mariood*/
+    .mariood {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            "videom"
+            "titulom"
+            "pmod";
+
+        .video-mariood {
+            iframe {
+                width: 500px;
+                height: 300px;
+            }
+        }
+    }
+    /*Secion Zelda TotK*/
+    .ztotk{
+        .spi-ztotk{
+            width: 700px;
+            flex-direction: column;
+            img{
+                align-self: center;
+            }
+        }
+    }
+}
+
+/*Media Queries Mobiles*/
+@media screen and (max-width:768px) {
+
+    /*mq nav mobile*/
+    header {
+        flex-direction: column;
+        position: relative;
+
+        nav {
+            ul {
+                flex-direction: column;
+                align-items: center;
+
+                li {
+                    a {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        img {
+            position: absolute;
+            left: 0;
+            top: 50px;
+        }
+    }
+
+    /*EStilos de index*/
+    .main-index {
+        .titulo-principal {
+            font-size: 2rem;
+            padding: 20px;
+            margin: 0;
+            .info-inicio{
+                p{
+                    text-align: justify;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    /*MQ nintendo*/
+    //art mariood
+    .mariood{
+        .video-mariood{
+            iframe{
+                width: 320px;
+                height: 210px;
+            }
+        }
+        .p-mariood{
+            padding: 20px;
+            p{
+                font-size: 1rem;
+                text-align: justify;
+            }
+        }
+    }
+    //seccion Zelda totk
+    .ztotk{
+        .p-img-ztotk{
+            img{
+                padding-left: 180px;
+                width: 70%;
+                height: auto;
+            }
+        }
+        .pp-ztotk{
+            p{
+                width: 70%;
+                padding-left: 180px;
+                height: auto;
+            }
+        }
+        .spi-ztotk{
+            p{
+                width: 70%;
+                padding-left: 180px;
+            }
+            img{
+                width: 320px;
+                height: auto;
+            }
+        }
+        .tp-ztotk{
+            p{
+                width: 70%;
+                height: auto;
+                padding-left: 180px;
+            }
+        }
+        .ti-ztotk{
+            img{
+                width: 320px;
+                height: auto;
+            }
+        }
+
+    }
+}

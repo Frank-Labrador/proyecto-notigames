@@ -1,0 +1,12 @@
+/*estilo del footer*/
+footer{
+    background-color: #333; 
+    text-align: center;
+    .footer-info{
+        p{
+            font-style: italic;
+            color: aqua;
+            font-family: 'Quantico', sans-serif;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+/*Estilos de Nintendo*/
+//seccion de mario
+.mariood{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2,auto);
+    grid-template-areas:
+    "videom titulom"
+    "pmod pmod";
+    align-items: center;
+    row-gap: 15px;
+    .video-mariood{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: videom;
+        iframe{
+            width: 600px;
+            height: 450px;
+        }
+    }
+    .titulo-mariood{
+        margin-right: 10rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        grid-area: titulom;
+        p{
+            text-transform: uppercase;
+            background-color: #087E8B;
+            border-radius: 30%;
+        }
+    }
+    .p-mariood{
+        grid-area: pmod;
+        padding: 20px 100px;
+        background-color: #000000;
+        text-align: justify;
+        text-indent: 1em;
+    }
+}
+// seccion de Zelda tears of the Kingdom
+#art-ztotk{
+    margin-top: 50px;
+}
+.ztotk{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+    "pimgz"
+    "ppz"
+    "spiz"
+    "tpz"
+    "tiz";
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    
+    .p-img-ztotk{
+        justify-self: center;
+        padding-top: 20px;
+        grid-area: pimgz;
+        img{width: 700px;
+        }
+    }
+    .pp-ztotk{
+        grid-area: ppz;
+        justify-self: center;
+        width: 700px;
+        p{
+            background-color: #000000;
+            padding:15px;
+            text-align: justify;
+        }
+
+    }
+    .spi-ztotk{
+        display: flex;
+        justify-self: center;
+        grid-area: spiz;
+        width: 900px;
+        p{
+            background-color: #000000;
+            padding: 10px;
+            text-align: justify;
+        }
+        img{
+            width: 500px;
+        }
+    }
+    .tp-ztotk{
+        grid-area: tpz;
+        justify-self: center;
+        width: 700px;
+        p{
+            background-color: #000000;
+            text-align: justify;
+        }
+
+    }
+    .ti-ztotk{
+        grid-area: tiz;
+        justify-self: center;
+        img{
+            width: 700px;
+        }
+    }
+}
