@@ -44,6 +44,7 @@
     //Estilos de pagina de Nintendo
     /* seccion mariood*/
     .mariood {
+        display: grid;
         grid-template-columns: auto;
         grid-template-rows: repeat(3, auto);
         grid-template-areas:
@@ -53,8 +54,14 @@
 
         .video-mariood {
             iframe {
-                width: 500px;
-                height: 300px;
+                width: 450px;
+                height: 30vw;
+            }
+        }
+        .titulo-mariood{
+            margin: 0%;
+            p{
+                width: 40vh;
             }
         }
     }
@@ -65,6 +72,17 @@
             flex-direction: column;
             img{
                 align-self: center;
+            }
+        }
+    }
+
+    //Estilos pagina de Xbox
+    /*Seccion Starfield*/
+    .starfield{
+        .video-starfield{
+            iframe{
+                width: 450px;
+                height: 30vw;
             }
         }
     }
@@ -111,6 +129,15 @@
                 }
             }
         }
+        .selectores{
+            .card{
+                img{
+                    width: 35vh;
+                    padding:20px;
+                } 
+
+            }
+        }
     }
 
     /*MQ nintendo*/
@@ -118,14 +145,16 @@
     .mariood{
         .video-mariood{
             iframe{
-                width: 320px;
+                width: 60vw;
                 height: 210px;
             }
         }
+        .titulo-mariood{
+            justify-self: center;
+            width: 30vh;
+        }
         .p-mariood{
-            padding: 20px;
             p{
-                font-size: 1rem;
                 text-align: justify;
             }
         }
@@ -134,41 +163,77 @@
     .ztotk{
         .p-img-ztotk{
             img{
-                padding-left: 180px;
-                width: 70%;
-                height: auto;
+                width: 60vw;
             }
         }
         .pp-ztotk{
+            width: 60vw;
             p{
-                width: 70%;
-                padding-left: 180px;
-                height: auto;
+                padding: 0%;
+                text-indent: 2em;
             }
         }
         .spi-ztotk{
+            width: 60vw;
             p{
-                width: 70%;
-                padding-left: 180px;
+                padding: 0;
             }
             img{
-                width: 320px;
-                height: auto;
+                padding-top: 10px;
+                width: 50vw;
             }
         }
         .tp-ztotk{
-            p{
-                width: 70%;
-                height: auto;
-                padding-left: 180px;
-            }
+            width: 60vw;
         }
         .ti-ztotk{
             img{
-                width: 320px;
-                height: auto;
+                width: 60vw;
             }
         }
 
+    }
+    //Estilos de Archivo Xbox
+    /*Seccion starfield*/
+    .starfield{
+        .video-starfield{
+            iframe{
+                width: 60vw;
+                height: 210px;
+            }
+        }
+        .p-starfield{
+            width: 60vw;
+        }
+        .v-starfield{
+            img{
+                width: 75vw;
+            }
+        }
+    }
+    //Estilos de Archivo Playstations
+    /*Seccion Final Fantasy*/
+    .ffxvi{
+        .pp-ffxvi{
+
+            p{
+                width: 60vw;
+                text-indent: 2em;
+            }
+
+        }
+        .img-ffxvi{
+            img{
+                width: 60vw;
+            }
+        }
+        .pgif-ffxvi{
+            p{
+                width: 60vw;
+            }
+            img{
+                width: 60vw;
+            }
+        }
     }
 }

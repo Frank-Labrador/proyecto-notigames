@@ -1,0 +1,41 @@
+/* Estilos de archivo xbox*/
+
+/*seccion articulo de starfield*/
+
+.starfield{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "video"
+    "ps"
+    "vs";
+    row-gap: 20px;
+    .video-starfield{
+        grid-area: video;
+        justify-self: center;
+        padding-top: 30px;
+        iframe{
+            width: 40vw;
+            height: 40vh;
+        }
+
+    }
+    .p-starfield{
+        grid-area: ps;
+        justify-self: center;
+        width: 700px;
+        p{
+            background-color: black;
+            text-align: justify;
+        }
+    }
+    .v-starfield{
+        grid-area: vs;
+        justify-self: center;
+        img{
+            width: 560px;
+            height: auto;
+        }
+    }
+}

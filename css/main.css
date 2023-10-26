@@ -22,10 +22,13 @@ html {
 }
 
 h1 {
+  font-family: "Quantico", sans-serif;
+  font-weight: bold;
   color: #0ea0a0;
   padding: 20px;
   font-size: 3rem;
   background-color: #000000;
+  display: inline-block;
 }
 
 h2 {
@@ -46,9 +49,14 @@ h3 {
 }
 
 p {
+  font-family: "Quantico", sans-serif;
   text-transform: initial;
   font-size: 2rem;
   color: aquamarine;
+}
+
+strong {
+  color: #9AE19D;
 }
 
 /*Estilo de Background */
@@ -102,6 +110,7 @@ header img {
   grid-template-rows: repeat(2, auto);
   grid-template-areas: "titulo titulo" "imagen info";
   gap: 30px;
+  /*Cards para representar los G.O.T.Y*/
 }
 .main-index .articulo-principal .info-titulo {
   grid-area: titulo;
@@ -131,6 +140,7 @@ header img {
 .main-index .articulo-principal .info-inicio p {
   text-align: justify;
   padding: 30px;
+  text-indent: 3em;
 }
 .main-index .goty {
   margin-top: 50px;
@@ -148,7 +158,7 @@ header img {
 }
 .main-index .selectores .card a img {
   width: 100%;
-  height: 250px;
+  height: auto;
   object-fit: cover;
 }
 .main-index .selectores .card .card-title {
@@ -174,6 +184,7 @@ header img {
   grid-area: videom;
 }
 .mariood .video-mariood iframe {
+  padding: 25px;
   width: 600px;
   height: 450px;
 }
@@ -191,10 +202,11 @@ header img {
 }
 .mariood .p-mariood {
   grid-area: pmod;
-  padding: 20px 100px;
+  width: 70vw;
+  justify-self: center;
   background-color: #000000;
   text-align: justify;
-  text-indent: 1em;
+  text-indent: 2em;
 }
 
 #art-ztotk {
@@ -233,10 +245,10 @@ header img {
   justify-self: center;
   grid-area: spiz;
   width: 900px;
+  gap: 30px;
 }
 .ztotk .spi-ztotk p {
   background-color: #000000;
-  padding: 10px;
   text-align: justify;
 }
 .ztotk .spi-ztotk img {
@@ -250,6 +262,7 @@ header img {
 .ztotk .tp-ztotk p {
   background-color: #000000;
   text-align: justify;
+  text-indent: 2em;
 }
 .ztotk .ti-ztotk {
   grid-area: tiz;
@@ -259,15 +272,121 @@ header img {
   width: 700px;
 }
 
+/* Estilos de archivo xbox*/
+/*seccion articulo de starfield*/
+.starfield {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "video" "ps" "vs";
+  row-gap: 20px;
+}
+.starfield .video-starfield {
+  grid-area: video;
+  justify-self: center;
+  padding-top: 30px;
+}
+.starfield .video-starfield iframe {
+  width: 40vw;
+  height: 40vh;
+}
+.starfield .p-starfield {
+  grid-area: ps;
+  justify-self: center;
+  width: 700px;
+}
+.starfield .p-starfield p {
+  background-color: black;
+  text-align: justify;
+}
+.starfield .v-starfield {
+  grid-area: vs;
+  justify-self: center;
+}
+.starfield .v-starfield img {
+  width: 560px;
+  height: auto;
+}
+
+.ffxvi {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "ppff" "imgff" "pgiff";
+  row-gap: 20px;
+  padding-top: 40px;
+}
+.ffxvi .pp-ffxvi {
+  grid-area: ppff;
+  justify-self: center;
+}
+.ffxvi .pp-ffxvi p {
+  width: 75vw;
+  background-color: black;
+  text-align: justify;
+  text-indent: 2em;
+}
+.ffxvi .img-ffxvi {
+  grid-area: imgff;
+  justify-self: center;
+}
+.ffxvi .img-ffxvi img {
+  width: 70vh;
+}
+.ffxvi .pgif-ffxvi {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  grid-area: pgiff;
+}
+.ffxvi .pgif-ffxvi p {
+  width: 75vh;
+  background-color: black;
+  text-align: justify;
+  text-indent: 2em;
+}
+.ffxvi .pgif-ffxvi img {
+  padding-top: 20px;
+  width: 50vh;
+  margin-bottom: 20px;
+}
+
+.bg-contacto {
+  min-height: 80vh;
+}
+
+.container {
+  padding-top: 50px;
+}
+
+.p-steam {
+  text-align: justify;
+  text-indent: 2em;
+  background-color: black;
+}
+
 /*estilo del footer*/
 footer {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #333;
   text-align: center;
+  row-gap: 10px;
 }
 footer .footer-info p {
   font-style: italic;
   color: aqua;
   font-family: "Quantico", sans-serif;
+}
+footer .rrss {
+  display: flex;
+}
+footer .rrss a img {
+  width: 50px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -292,13 +411,20 @@ footer .footer-info p {
   }
   /* seccion mariood*/
   .mariood {
+    display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "videom" "titulom" "pmod";
   }
   .mariood .video-mariood iframe {
-    width: 500px;
-    height: 300px;
+    width: 450px;
+    height: 30vw;
+  }
+  .mariood .titulo-mariood {
+    margin: 0%;
+  }
+  .mariood .titulo-mariood p {
+    width: 40vh;
   }
   /*Secion Zelda TotK*/
   .ztotk .spi-ztotk {
@@ -307,6 +433,11 @@ footer .footer-info p {
   }
   .ztotk .spi-ztotk img {
     align-self: center;
+  }
+  /*Seccion Starfield*/
+  .starfield .video-starfield iframe {
+    width: 450px;
+    height: 30vw;
   }
 }
 /*Media Queries Mobiles*/
@@ -338,44 +469,72 @@ footer .footer-info p {
     text-align: justify;
     font-size: 1rem;
   }
-  /*MQ nintendo*/
-  .mariood .video-mariood iframe {
-    width: 320px;
-    height: 210px;
-  }
-  .mariood .p-mariood {
+  .main-index .selectores .card img {
+    width: 35vh;
     padding: 20px;
   }
+  /*MQ nintendo*/
+  .mariood .video-mariood iframe {
+    width: 60vw;
+    height: 210px;
+  }
+  .mariood .titulo-mariood {
+    justify-self: center;
+    width: 30vh;
+  }
   .mariood .p-mariood p {
-    font-size: 1rem;
     text-align: justify;
   }
   .ztotk .p-img-ztotk img {
-    padding-left: 180px;
-    width: 70%;
-    height: auto;
+    width: 60vw;
+  }
+  .ztotk .pp-ztotk {
+    width: 60vw;
   }
   .ztotk .pp-ztotk p {
-    width: 70%;
-    padding-left: 180px;
-    height: auto;
+    padding: 0%;
+    text-indent: 2em;
+  }
+  .ztotk .spi-ztotk {
+    width: 60vw;
   }
   .ztotk .spi-ztotk p {
-    width: 70%;
-    padding-left: 180px;
+    padding: 0;
   }
   .ztotk .spi-ztotk img {
-    width: 320px;
-    height: auto;
+    padding-top: 10px;
+    width: 50vw;
   }
-  .ztotk .tp-ztotk p {
-    width: 70%;
-    height: auto;
-    padding-left: 180px;
+  .ztotk .tp-ztotk {
+    width: 60vw;
   }
   .ztotk .ti-ztotk img {
-    width: 320px;
-    height: auto;
+    width: 60vw;
+  }
+  /*Seccion starfield*/
+  .starfield .video-starfield iframe {
+    width: 60vw;
+    height: 210px;
+  }
+  .starfield .p-starfield {
+    width: 60vw;
+  }
+  .starfield .v-starfield img {
+    width: 75vw;
+  }
+  /*Seccion Final Fantasy*/
+  .ffxvi .pp-ffxvi p {
+    width: 60vw;
+    text-indent: 2em;
+  }
+  .ffxvi .img-ffxvi img {
+    width: 60vw;
+  }
+  .ffxvi .pgif-ffxvi p {
+    width: 60vw;
+  }
+  .ffxvi .pgif-ffxvi img {
+    width: 60vw;
   }
 }
 

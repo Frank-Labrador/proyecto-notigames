@@ -1,12 +1,26 @@
 /*estilo del footer*/
 footer{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #333; 
     text-align: center;
+    row-gap: 10px;
     .footer-info{
         p{
             font-style: italic;
             color: aqua;
             font-family: 'Quantico', sans-serif;
+        }
+    }
+    .rrss{
+        display: flex;
+        a{
+            img{
+                width: 50px;
+            }
         }
     }
 }

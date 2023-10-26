@@ -9,12 +9,14 @@
     "pmod pmod";
     align-items: center;
     row-gap: 15px;
+    
     .video-mariood{
         display:flex;
         justify-content: center;
         align-items: center;
         grid-area: videom;
         iframe{
+            padding: 25px;
             width: 600px;
             height: 450px;
         }
@@ -33,10 +35,11 @@
     }
     .p-mariood{
         grid-area: pmod;
-        padding: 20px 100px;
+        width: 70vw;
+        justify-self: center;
         background-color: #000000;
         text-align: justify;
-        text-indent: 1em;
+        text-indent: 2em;
     }
 }
 // seccion de Zelda tears of the Kingdom
@@ -61,7 +64,8 @@
         justify-self: center;
         padding-top: 20px;
         grid-area: pimgz;
-        img{width: 700px;
+        img{
+            width: 700px;
         }
     }
     .pp-ztotk{
@@ -80,9 +84,9 @@
         justify-self: center;
         grid-area: spiz;
         width: 900px;
+        gap: 30px;
         p{
             background-color: #000000;
-            padding: 10px;
             text-align: justify;
         }
         img{
@@ -96,6 +100,7 @@
         p{
             background-color: #000000;
             text-align: justify;
+            text-indent: 2em;
         }
 
     }
