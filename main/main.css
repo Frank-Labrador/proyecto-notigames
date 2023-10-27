@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-/*Variables para */
 /*Estilos de fuente*/
 html {
   font-family: "Quantico", sans-serif;
@@ -57,7 +56,7 @@ p {
 }
 
 strong {
-  color: #9ae19d;
+  color: #9AE19D;
 }
 
 /*Estilo de Background */
@@ -72,12 +71,12 @@ main {
 /*estilos de header*/
 header {
   background-color: #087E8B;
-  border-bottom: 3px solid #9ae19d;
+  border-bottom: 3px solid #9AE19D;
   position: sticky;
   top: 0;
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-between;
+  flex-direction: row-reverse;
   align-items: center;
   z-index: 1;
   height: 100%;
@@ -90,7 +89,7 @@ header nav ul {
 }
 header nav ul li a {
   text-decoration: none;
-  color: #9ae19d;
+  color: #9AE19D;
   font-size: 26px;
   text-transform: uppercase;
   font-weight: bold;
@@ -122,18 +121,19 @@ header img {
   align-items: center;
 }
 .main-index .articulo-principal .info-imagen img {
-  background-color: #000000;
+  background-color: rgb(0, 0, 0);
   border-radius: 50px;
   width: 100%;
   padding-left: 20px;
   object-fit: cover;
 }
 .main-index .articulo-principal .info-inicio {
-  background-color: #000000;
+  background-color: rgb(0, 0, 0);
   border-radius: 40%;
-  box-shadow: -9px 19px 57px 17px #087E8B;
-  -webkit-box-shadow: -9px 19px 57px 17px #087E8B;
-  -moz-box-shadow: -9px 19px 57px 17px #087E8B;
+  box-shadow: -9px 19px 57px 17px rgba(46, 173, 152, 0.7);
+  -webkit-box-shadow: -9px 19px 57px 17px rgba(46, 173, 152, 0.7);
+  -moz-box-shadow: -9px 19px 57px 17px rgba(46, 173, 152, 0.7);
+  grid-area: info;
   padding: 20px;
   align-self: center;
 }
@@ -147,9 +147,7 @@ header img {
 }
 .main-index .selectores {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
   flex-wrap: wrap;
   margin-top: 20px;
   row-gap: 2rem;
@@ -181,7 +179,6 @@ header img {
 }
 .mariood .video-mariood {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   grid-area: videom;
@@ -194,9 +191,8 @@ header img {
 .mariood .titulo-mariood {
   margin-right: 10rem;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   grid-area: titulom;
 }
 .mariood .titulo-mariood p {
@@ -300,7 +296,7 @@ header img {
   width: 700px;
 }
 .starfield .p-starfield p {
-  background-color: #000000;
+  background-color: black;
   text-align: justify;
 }
 .starfield .v-starfield {
@@ -326,7 +322,7 @@ header img {
 }
 .ffxvi .pp-ffxvi p {
   width: 75vw;
-  background-color: #000000;
+  background-color: black;
   text-align: justify;
   text-indent: 2em;
 }
@@ -340,13 +336,13 @@ header img {
 .ffxvi .pgif-ffxvi {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-self: center;
   align-items: center;
   grid-area: pgiff;
 }
 .ffxvi .pgif-ffxvi p {
   width: 75vh;
-  background-color: #000000;
+  background-color: black;
   text-align: justify;
   text-indent: 2em;
 }
@@ -359,14 +355,15 @@ header img {
 .bg-contacto {
   min-height: 80vh;
 }
-.bg-contacto form .container {
+
+.container {
   padding-top: 50px;
 }
 
-.pc-bg .container .row .col-sm-12 .p-steam {
+.p-steam {
   text-align: justify;
   text-indent: 2em;
-  background-color: #000000;
+  background-color: black;
 }
 
 /*estilo del footer*/
@@ -382,7 +379,6 @@ footer {
 }
 footer .footer-info p {
   font-style: italic;
-  color: #7fffd4;
   font-family: "Quantico", sans-serif;
 }
 footer .rrss {
