@@ -82,6 +82,15 @@ header {
   z-index: 1;
   height: 100%;
 }
+header #menu-btn {
+  display: none;
+}
+header label {
+  display: none;
+}
+header label:hover {
+  cursor: pointer;
+}
 header nav ul {
   display: flex;
   list-style: none;
@@ -200,6 +209,7 @@ header img {
   grid-area: titulom;
 }
 .mariood .titulo-mariood p {
+  padding: 10px;
   text-transform: uppercase;
   background-color: #087E8B;
   border-radius: 30%;
@@ -362,6 +372,14 @@ header img {
 .bg-contacto form .container {
   padding-top: 50px;
 }
+.bg-contacto form .container .row .col-sm-6 .btn {
+  background-color: #087E8B;
+  color: #000000;
+  border: none;
+}
+.bg-contacto form .container .row .col-sm-6 .btn:hover {
+  border: 2px solid #9ae19d;
+}
 
 .pc-bg .container .row .col-sm-12 .p-steam {
   text-align: justify;
@@ -428,6 +446,7 @@ footer .rrss a img {
   }
   .mariood .titulo-mariood p {
     width: 40vh;
+    padding: 15px;
   }
   /*Secion Zelda TotK*/
   .ztotk .spi-ztotk {
@@ -448,7 +467,25 @@ footer .rrss a img {
   /*mq nav mobile*/
   header {
     flex-direction: column;
+    height: 100px;
+  }
+  header label {
+    display: block;
+  }
+  header label .boton {
+    display: block;
     position: relative;
+    top: 25px;
+    width: 50px;
+  }
+  header nav {
+    display: none;
+    flex-direction: column;
+    max-height: 0;
+    background-color: #087E8B;
+    border-bottom: 3px solid #9ae19d;
+    border-left: 3px solid #9ae19d;
+    border-right: 3px solid #9ae19d;
   }
   header nav ul {
     flex-direction: column;
@@ -457,10 +494,13 @@ footer .rrss a img {
   header nav ul li a {
     font-size: 15px;
   }
+  header input[type=checkbox]:checked ~ nav {
+    display: block;
+    max-height: 500px;
+  }
   header img {
     position: absolute;
     left: 0;
-    top: 50px;
   }
   /*EStilos de index*/
   .main-index .titulo-principal {

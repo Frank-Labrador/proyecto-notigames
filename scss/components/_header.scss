@@ -7,6 +7,15 @@ header{
     @include flex(row-reverse, space-between, center);
     z-index: 1;
     height: 100%;
+    #menu-btn{
+        display: none;
+    }
+    label{
+        display: none;
+        &:hover{
+            cursor: pointer;
+        }
+    }
     nav{
         ul{
             display: flex;
