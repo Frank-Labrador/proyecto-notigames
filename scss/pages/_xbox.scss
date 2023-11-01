@@ -2,40 +2,48 @@
 
 /*seccion articulo de starfield*/
 
-.starfield{
+.starfield {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: 
-    "video"
-    "ps"
-    "vs";
+    grid-template-areas:
+        "video"
+        "ps"
+        "vs";
     row-gap: 20px;
-    .video-starfield{
+
+    .video-starfield {
         grid-area: video;
         justify-self: center;
         padding-top: 30px;
-        iframe{
+
+        iframe {
             width: 40vw;
             height: 40vh;
         }
 
     }
-    .p-starfield{
+
+    .p-starfield {
         grid-area: ps;
         justify-self: center;
         width: 700px;
-        p{
+
+        p {
             background-color: $fondos-de-textos;
             text-align: justify;
+            text-indent: 3em;
         }
     }
-    .v-starfield{
+
+    .v-starfield {
         grid-area: vs;
         justify-self: center;
-        img{
+
+        img {
             width: 560px;
             height: auto;
+            margin-bottom: 25px;
         }
     }
 }

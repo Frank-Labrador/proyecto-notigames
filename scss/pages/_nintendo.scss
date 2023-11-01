@@ -1,111 +1,134 @@
 /*Estilos de Nintendo*/
 //seccion de mario
-.mariood{
+.mariood {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2,auto);
+    grid-template-rows: repeat(2, auto);
     grid-template-areas:
-    "videom titulom"
-    "pmod pmod";
+        "videom titulom"
+        "pmod pmod";
     align-items: center;
     row-gap: 15px;
-    
-    .video-mariood{
+
+    .video-mariood {
         @include flex(row, center, center);
         grid-area: videom;
-        iframe{
+
+        iframe {
             padding: 25px;
             width: 600px;
             height: 450px;
         }
     }
-    .titulo-mariood{
+
+    .titulo-mariood {
         margin-right: 10rem;
         @include flex (row, center, center);
         grid-area: titulom;
-        p{
+
+        p {
             padding: 10px;
             text-transform: uppercase;
             background-color: $color-principal;
-            border-radius: 30%;    
+            border-radius: 30%;
         }
     }
-    .p-mariood{
+
+    .p-mariood {
         grid-area: pmod;
         width: 70vw;
         justify-self: center;
         background-color: $fondos-de-textos;
         text-align: justify;
-        text-indent: 2em;
+        text-indent: 4em;
     }
 }
+
 // seccion de Zelda tears of the Kingdom
-#art-ztotk{
+#art-ztotk {
     margin-top: 50px;
 }
-.ztotk{
+
+.ztotk {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(5, auto);
-    grid-template-areas: 
-    "pimgz"
-    "ppz"
-    "spiz"
-    "tpz"
-    "tiz";
+    grid-template-areas:
+        "pimgz"
+        "ppz"
+        "spiz"
+        "tpz"
+        "tiz";
     align-items: center;
     justify-content: center;
     row-gap: 20px;
-    
-    .p-img-ztotk{
+
+    .p-img-ztotk {
         justify-self: center;
         padding-top: 20px;
         grid-area: pimgz;
-        img{
+
+        img {
             width: 700px;
         }
     }
-    .pp-ztotk{
+
+    .pp-ztotk {
         grid-area: ppz;
         justify-self: center;
         width: 700px;
-        p{
+
+        p {
             background-color: $fondos-de-textos;
-            padding:15px;
+            padding: 15px;
             text-align: justify;
+            text-indent: 2em;
+            .salto-linea{
+
+            }
         }
 
     }
-    .spi-ztotk{
+
+    .spi-ztotk {
         display: flex;
         justify-self: center;
         grid-area: spiz;
         width: 900px;
         gap: 30px;
-        p{
+
+        p {
             background-color: $fondos-de-textos;
             text-align: justify;
+            text-indent: 2em;
         }
-        img{
+
+        img {
             width: 500px;
         }
     }
-    .tp-ztotk{
+
+    .tp-ztotk {
         grid-area: tpz;
         justify-self: center;
         width: 700px;
-        p{
+
+        p {
             background-color: $fondos-de-textos;
             text-align: justify;
             text-indent: 2em;
         }
 
     }
-    .ti-ztotk{
+
+    .ti-ztotk {
         grid-area: tiz;
         justify-self: center;
-        img{
+
+        img {
             width: 700px;
+            height: auto;
+            margin-bottom: 30px;
         }
     }
 }

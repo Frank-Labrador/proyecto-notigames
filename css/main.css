@@ -162,6 +162,8 @@ header img {
   flex-wrap: wrap;
   margin-top: 20px;
   row-gap: 2rem;
+  column-gap: 1rem;
+  padding: 15px;
 }
 .main-index .selectores .card {
   width: 400px;
@@ -220,7 +222,7 @@ header img {
   justify-self: center;
   background-color: #000000;
   text-align: justify;
-  text-indent: 2em;
+  text-indent: 4em;
 }
 
 #art-ztotk {
@@ -253,6 +255,7 @@ header img {
   background-color: #000000;
   padding: 15px;
   text-align: justify;
+  text-indent: 2em;
 }
 .ztotk .spi-ztotk {
   display: flex;
@@ -264,6 +267,7 @@ header img {
 .ztotk .spi-ztotk p {
   background-color: #000000;
   text-align: justify;
+  text-indent: 2em;
 }
 .ztotk .spi-ztotk img {
   width: 500px;
@@ -284,6 +288,8 @@ header img {
 }
 .ztotk .ti-ztotk img {
   width: 700px;
+  height: auto;
+  margin-bottom: 30px;
 }
 
 /* Estilos de archivo xbox*/
@@ -312,6 +318,7 @@ header img {
 .starfield .p-starfield p {
   background-color: #000000;
   text-align: justify;
+  text-indent: 3em;
 }
 .starfield .v-starfield {
   grid-area: vs;
@@ -320,6 +327,7 @@ header img {
 .starfield .v-starfield img {
   width: 560px;
   height: auto;
+  margin-bottom: 25px;
 }
 
 .ffxvi {
@@ -363,7 +371,7 @@ header img {
 .ffxvi .pgif-ffxvi img {
   padding-top: 20px;
   width: 50vh;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .bg-contacto {

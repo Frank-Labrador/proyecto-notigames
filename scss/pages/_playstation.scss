@@ -1,43 +1,50 @@
-.ffxvi{
+.ffxvi {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: 
-    "ppff"
-    "imgff"
-    "pgiff";
+    grid-template-areas:
+        "ppff"
+        "imgff"
+        "pgiff";
     row-gap: 20px;
     padding-top: 40px;
-    .pp-ffxvi{
+
+    .pp-ffxvi {
         grid-area: ppff;
         justify-self: center;
-        p{
+
+        p {
             width: 75vw;
-            background-color:$fondos-de-textos;
+            background-color: $fondos-de-textos;
             text-align: justify;
             text-indent: 2em;
         }
     }
-    .img-ffxvi{
+
+    .img-ffxvi {
         grid-area: imgff;
         justify-self: center;
-        img{
+
+        img {
             width: 70vh;
         }
     }
-    .pgif-ffxvi{
+
+    .pgif-ffxvi {
         @include flex(column, center, center);
         grid-area: pgiff;
-        p{
+
+        p {
             width: 75vh;
-            background-color:$fondos-de-textos;
+            background-color: $fondos-de-textos;
             text-align: justify;
             text-indent: 2em;
         }
-        img{
+
+        img {
             padding-top: 20px;
             width: 50vh;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
     }
 }
