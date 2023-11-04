@@ -62,12 +62,19 @@
         .card {
             width: 400px;
             height: 300px;
+            &:hover{
+                width: 420px;
+                height: 320px;
+            }
 
             a {
                 img {
                     width: 100%;
                     height: auto;
                     object-fit: cover;
+                    &:hover{
+                        border: 2px groove $colores-parrafos;
+                    }
                 }
             }
 
