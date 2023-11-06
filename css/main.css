@@ -34,7 +34,7 @@ h1 {
 
 h2 {
   font-family: "Quantico", sans-serif;
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: #087E8B;
   margin-left: 30px;
   display: flex;
@@ -361,7 +361,7 @@ header img {
   justify-self: center;
 }
 .ffxvi .img-ffxvi img {
-  width: 70vh;
+  width: 60vw;
 }
 .ffxvi .pgif-ffxvi {
   display: flex;
@@ -371,7 +371,7 @@ header img {
   grid-area: pgiff;
 }
 .ffxvi .pgif-ffxvi p {
-  width: 75vh;
+  width: 75vw;
   background-color: #000000;
   text-align: justify;
   text-indent: 2em;
@@ -588,6 +588,7 @@ footer .rrss a img {
   }
   .ffxvi .img-ffxvi img {
     width: 60vw;
+    height: auto;
   }
   .ffxvi .pgif-ffxvi p {
     width: 60vw;
